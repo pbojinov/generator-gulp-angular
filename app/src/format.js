@@ -48,7 +48,7 @@ module.exports = function () {
   });
 
   /* router */
-  var partial = 'app/partials/__' + this.props.ui.key + '.html';
+  var partial = 'app/partials/__main' + '.html';
 
   if(this.props.router.module !== null) {
     var copies = {};
@@ -74,9 +74,9 @@ module.exports = function () {
   }
 
   /* ui */
-  var cssTranspiler = 'scss'; //stub
+  var cssTranspiler = 'less'; //stub
 
-  var styleSource = 'app/styles/__' + this.props.ui.key + '.' + cssTranspiler;
+  var styleSource = 'app/styles/__main' + '.' + cssTranspiler;
   var styleDest = 'app/styles/main.' + cssTranspiler;
   var styleCopies = {};
   styleCopies[styleSource] = styleDest;

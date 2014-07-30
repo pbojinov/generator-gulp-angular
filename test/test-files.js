@@ -16,7 +16,7 @@ describe('gulp-angular generator files', function () {
     files.call({
       _: _,
       optionalFiles: ['router', {
-        copies: {'app/partials/__foundation.html': 'app/partials/main.html'}
+        copies: {'app/partials/__main.html': 'app/partials/main.html'}
       }, {
         copies: ['app/images/angular.png']
       }],

@@ -1,23 +1,28 @@
-# generator-gulp-angular [![Build Status](https://secure.travis-ci.org/Swiip/generator-gulp-angular.svg?branch=master)](http://travis-ci.org/Swiip/generator-gulp-angular)
+# generator-gulp-angular-less
 
 Offers you a Yeoman generator to initiate a Web application with the following workflow:
 
-<img height="100" align="left" src="https://raw.githubusercontent.com/yeoman/yeoman.io/master/app/assets/img/bullet-yo.gif">
+<img height="100" align="left" src="media/bullet-yo.gif">
 
-<img height="100" align="left" src="https://raw.github.com/gulpjs/artwork/master/gulp.png">
+<img height="100" align="left" src="media/gulp.png">
 
-<img height="100" align="left" src="http://bower.io/img/bower-logo.png">
+<img height="100" align="left" src="media/bower-logo.png">
 
-<img height="100" align="left" src="https://s3.amazonaws.com/media-p.slid.es/uploads/hugojosefson/images/86267/angularjs-logo.png">
+<img height="100" align="left" src="media/angularjs-logo.png">
+
+<img height="100" align="left" src="media/less.png">
 
 <br><br><br><br>
 
-## Why generator-gulp-angular ?
+## Why fork?
+
+Added `less` support and remove bootstrap/foundation UI options.
+
+## Why generator-gulp-angular-less ?
 
 This generator combines the best features of other generators like [generator-angular](https://github.com/yeoman/generator-angular), [ngTailor](https://github.com/lauterry/generator-ngtailor) and [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) into an optimal workflow for starting applications with AngularJS powered by Gulp!
 
 generator-gulp-angular scaffolds an AngularJS application with a full-featured gulpfile.js, giving you immediate out-of-the-box access to all tasks for modern web development.
-
 
 My intention is to create a generator that gives users total control over their development toolbox so they can immediately start projects with their preferred tools, such as specific UI frameworks or JavaScript preprocessors.
 
@@ -81,13 +86,6 @@ But I recommend keeping to a division by file type: scripts, styles, partials.
 * *Angular modules*: animate, cookies, touch, sanitize
 * *Resource handler*: ngResource, Restangular, none
 * *Router*: ngRoute, UI Router, none
-* *UI Framework*: Bootstrap, Foundation (depends on the chosen CSS preprocessor)
-* **TODO** Bootstrap directives : UI Bootstrap, Angular Strap, none (only if you chose Bootstrap)
-* **TODO** CSS preprocessor: less, sass, none
-* **TODO** JS preprocessor: CoffeeScript, TypeScript, ECMAScript6 (Traceur)
-* **TODO** HTML preprocessor: Jade ?
-* **TODO** Script loader: Require, Browserify, ES6 with Require?, none
-* **TODO** Test framework: Jasmine, Mocha, Qunit
 
 ## Known issue
 
@@ -99,7 +97,6 @@ I tried many configurations for Protractor without success, any hint would be ap
 
 ### 0.4.0
 
-* Add option to choose between Foundation or Bootstrap as UI Framework
 * New welcome page presenting integrated technologies
 * Several package updates: `yosay`, `browsersync`, `modernizr`, `protractor`...
 * Some bug fixes: #6, #7, #8

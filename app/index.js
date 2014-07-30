@@ -48,8 +48,7 @@ var GulpAngularGenerator = yeoman.generators.Base.extend({
         angularModules: [],
         jQuery: { name: null, version: null },
         resource: { name: null, version: null, module: null },
-        router: { name: null, version: null, module: null },
-        ui: { name: 'bootstrap-sass-official', version: '3.1.x', key: 'bootstrap' }
+        router: { name: null, version: null, module: null }
       };
     }
   },

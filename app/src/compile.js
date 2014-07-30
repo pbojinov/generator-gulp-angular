@@ -22,8 +22,7 @@ module.exports = function () {
     this.props.jQuery,
     this.props.angularModules,
     this.props.resource,
-    this.props.router,
-    this.props.ui
+    this.props.router
   ]);
 
   this.model.bowerResolutions = _.flatten([
@@ -39,8 +38,7 @@ module.exports = function () {
 
   this.model.technologies = [
     'angular', 'browsersync', 'gulp', 'jasmine', 'karma', 'protractor',
-    this.props.jQuery.name,
-    this.props.ui.key
+    this.props.jQuery.name
   ];
 
   this.model.technologies = _.reject(this.model.technologies, _.isNull);

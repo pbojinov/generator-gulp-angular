@@ -1,0 +1,30 @@
+<div class="row">
+    <h1> 
+        <a href="#">Gulp and Angular</a>
+    </h1>
+
+    <h2>'Allo, 'Allo!</h2>
+    <img src="images/yeoman.png" alt="I'm Yeoman">
+    <br>
+    <p>Always a pleasure scaffolding your apps.</p>
+</div>
+
+<div class="row">
+    <div ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
+        <img ng-src="images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
+        <div>
+            <h3>{{awesomeThing.title}}</h3>
+            <p>{{awesomeThing.description}}</p>
+            <p>
+                <a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <hr>
+    <p>
+      With ♥ from <a href="https://twitter.com/pbojinov">@pbojinov</a>
+    </p>
+</div>

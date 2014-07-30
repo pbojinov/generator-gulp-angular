@@ -148,29 +148,6 @@
           "name": "None"
         }
       ]
-    },
-    {
-      "type": "list",
-      "name": "ui",
-      "message": "Which UI framework do you want ?",
-      "choices": [
-        {
-          "value": {
-            "name": "bootstrap-sass-official",
-            "version": "3.1.x",
-            "key": "bootstrap"
-          },
-          "name": "Bootstrap, the most popular HTML, CSS, and JS framework"
-        },
-        {
-          "value": {
-            "name": "foundation",
-            "version": "5.2.x",
-            "key": "foundation"
-          },
-            "name": "Foundation, The most advanced responsive front-end framework in the world\""
-        }
-      ]
     }
   ]
 }

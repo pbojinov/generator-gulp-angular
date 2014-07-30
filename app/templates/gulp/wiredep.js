@@ -8,7 +8,7 @@ var $ = require('gulp-load-plugins')();
 gulp.task('wiredep', function () {
   var wiredep = require('wiredep').stream;
 
-  gulp.src('app/styles/*.scss')
+  gulp.src('app/styles/*.less')
     .pipe(wiredep({
         directory: 'app/bower_components'
     }))
@@ -17,7 +17,6 @@ gulp.task('wiredep', function () {
   gulp.src('app/*.html')
     .pipe(wiredep({
       directory: 'app/bower_components',
-      exclude: ['bootstrap-sass-official']
     }))
     .pipe(gulp.dest('app'));
 });

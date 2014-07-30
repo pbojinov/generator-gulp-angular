@@ -7,9 +7,9 @@ var saveLicense = require('uglify-save-license');
 var mainBowerFiles = require('main-bower-files');
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/main.scss')
+  return gulp.src('app/styles/main.less')
     .pipe($.plumber())
-    .pipe($.rubySass({style: 'expanded'}))
+    .pipe($.less())
     .pipe($.autoprefixer('last 1 version'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe($.size());
@@ -55,7 +55,6 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function () {
     .pipe($.uglify({preserveComments: saveLicense}))
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
-    .pipe($.replace('bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap','fonts'))
     .pipe($.csso())
     .pipe(cssFilter.restore())
     .pipe($.useref.restore())
