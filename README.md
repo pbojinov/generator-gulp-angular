@@ -95,6 +95,12 @@ I tried many configurations for Protractor without success, any hint would be ap
 
 ## Changelog
 
+### 0.5.0
+
+* Fork project
+* Remove `sass` support
+* Remove `bootstrap` and `foundation` ui options
+
 ### 0.4.0
 
 * New welcome page presenting integrated technologies
